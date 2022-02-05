@@ -106,7 +106,6 @@ const Chronometer = ({ id, title, project }) => {
             <label className="input-label" htmlFor={"titleId"}>
               {"Title"}
             </label>
-            <p>{titleInput}</p>
             <input
               name="titleId"
               className="input-content"
@@ -120,7 +119,6 @@ const Chronometer = ({ id, title, project }) => {
             <label className="input-label" htmlFor={"projectId"}>
               {"Project"}
             </label>
-            <p>{projectInput}</p>
             <input
               name="projectId"
               className="input-content"

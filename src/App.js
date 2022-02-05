@@ -11,16 +11,18 @@ function App() {
     <div className="App">
       <header className="App-header">Cronómetros</header>
       {chronometers.map((value) => {
-        if (value !== undefined) {
-          return (
-            <Chronometer
-              key={value.id}
-              id={value.id}
-              title={value.title}
-              project={value.project}
-            />
-          );
-        }
+        return (
+          <>
+            {value !== undefined && (
+              <Chronometer
+                key={value.id}
+                id={value.id}
+                title={value.title}
+                project={value.project}
+              />
+            )}
+          </>
+        );
       })}
 
       <button className="add-button" onClick={(e) => AddChronometer(e)}>
