@@ -1,0 +1,30 @@
+@import "./variables";
+
+.App {
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .App-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: black;
+    padding:10px;
+    width:100%;
+    border-bottom: 1px solid $color_border;
+    margin-bottom:30px;
+  }
+  .add-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:15px;
+    outline: 1.5px solid $color_border;
+    border-radius: 10px;
+  }  
+}
+
